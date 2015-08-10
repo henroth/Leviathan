@@ -1,0 +1,32 @@
+* Software
+probably best to just run on linux
+** TODO update virtual machine/get ubunutu LTS 14.01 on laptop
+* Hardware
+** Prove out comms
+Rasberry Pi $40
+Flash card
+- need to install Ubuntu LTS 14.01
+Xbee $40 x2
+Xbee explorer for laptop interface $25 (maybe on for Rasberry pi too?)
+** Prove out motor control
+Brushed or brushless?
+Motor control board $10-$30?
+ -L298N
+https://www.pololu.com/product/2753
+Two motors?
+
+Props and prop shafts?
+** Last bits
+Platform ??
+GPS module $30-$40
+imu ???
+Battery/ Terminal.
+   - Motor battery
+   - Rasberry pi battery
+   - Voltage regulator: L7805 LM7805 Three Terminal Voltage Regulator Module For Arduino
+
+* Setup
+** Rasberry Pi
+Download NOOBS from https://www.raspberrypi.org/downloads/
+** PC
+Install ROS http://wiki.ros.org/jade/Installation/Ubuntu
