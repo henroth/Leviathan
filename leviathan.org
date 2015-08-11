@@ -2,12 +2,30 @@
 probably best to just run on linux
 ** TODO update virtual machine/get ubunutu LTS 14.01 on laptop
 * Hardware
+** Costs
+| Status  | Part                     | Number | Cost | Url                                                          |
+|---------+--------------------------+--------+------+--------------------------------------------------------------|
+| HAVE    | Raspberry Pi             |      1 | $30  | https://www.raspberrypi.org/products/raspberry-pi-2-model-b/ |
+| HAVE    | Toshiba 32GB MicroSD     |      1 | $15  |                                                              |
+| ORDERED | XBee Pro 60mW w/ Wire    |      2 | $37  | https://www.sparkfun.com/products/8742                       |
+| ORDERED | XBee Explorer Regulator  |      1 | $10  | https://www.sparkfun.com/products/11373                      |
+| ORDERED | XBee Explorer USB        |      1 | $25  | https://www.sparkfun.com/products/11812                      |
+| TO BUY  | Brushless DC Motor       |      1 | ~$15 |                                                              |
+| TO BUY  | a) ESC                   |      1 | ~$10 |                                                              |
+| TO BUY  | b) L249 Motor Controller |      1 | ~$10 |                                                              |
+| TO BUY  | Servo for rudder         |      1 | ~$5  |                                                              |
+| TO BUY  | Hull                     |      1 | ?    |                                                              |
+| TO BUY  | Propeller                |      2 | ?    |                                                              |
+| TO BUY  | Prop Shaft               |      1 | ?    |                                                              |
+|---------+--------------------------+--------+------+--------------------------------------------------------------|
+|         |                          |        |      |                                                              |
+
 ** Prove out comms
-Rasberry Pi $40
-Flash card
-- need to install Ubuntu LTS 14.01
-Xbee $40 x2
-Xbee explorer for laptop interface $25 (maybe on for Rasberry pi too?)
+*** DONE Rasberry Pi $40
+*** DONE Flash card
+- need to install Raspbian
+*** ORDERED Xbee $40 x2
+*** ORDERED Xbee explorer for laptop interface $25 (maybe on for Rasberry pi too?)
 ** Prove out motor control
 Brushed or brushless?
 Motor control board $10-$30?
@@ -30,5 +48,19 @@ Battery/ Terminal.
 Download NOOBS from https://www.raspberrypi.org/downloads/
 Install ROS http://wiki.ros.org/jade/Installation/Ubuntu
 ** PC
-Install ROS http://wiki.ros.org/jade/Installation/Ubuntu
-
+Install ROS http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Indigo%20on%20Raspberry%20Pi
+- have to install from source
+- installed ros_comms, robot and perception variants
+  - needed to run the following to install multiple variants 
+    > wstool merge whatever.rosinstall -t src
+    > wstool update -t src
+** Both
+*** ROS packages
+rosserial_xbee
+** Next steps
+*** DONE hook pi to network, update
+*** TODO Install ros on pi
+*** TODO create catkin workspace and beginning of Leviathan package
+*** TODO configure xbees
+*** TODO wire xbee for pi
+*** TODO Write simple comms node for pc -> pi
