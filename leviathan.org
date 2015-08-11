@@ -48,7 +48,6 @@ Battery/ Terminal.
 Download NOOBS from https://www.raspberrypi.org/downloads/
 Install ROS http://wiki.ros.org/jade/Installation/Ubuntu
 ** PC
-<<<<<<< HEAD
 Install ROS http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Indigo%20on%20Raspberry%20Pi
 - have to install from source
 - installed ros_comms, robot and perception variants
@@ -65,8 +64,3 @@ rosserial_xbee
 *** TODO configure xbees
 *** TODO wire xbee for pi
 *** TODO Write simple comms node for pc -> pi
-=======
-Install ROS http://wiki.ros.org/jade/Installation/Ubuntu
-
-* Test
->>>>>>> 602f6b618ffc9130e4f722b30a0e6c2a89349e1d
